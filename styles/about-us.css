@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+#videobackground_container {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background-image: ;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-width: none;
+}
+
+#content_container {}
