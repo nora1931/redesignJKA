@@ -2,14 +2,25 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .videobackground_container {
     width: 100%;
-    margin: 0;
-    height: 100vh;
+    height: 100%;
     background-image: url(https://raw.githubusercontent.com/nora1931/redesignJKA/master/img/lookbook_billede.jpeg);
     background-size: cover;
     background-position: 50% 50%;
-    max-width: none;
 }
 
-#content_container {}
+.content_container {
+    padding: 10px 50px;
+    background-color: white;
+    margin: 25px 80px;
+}
+
+.overskrift h1 {
+    margin-top: 0;
+}
