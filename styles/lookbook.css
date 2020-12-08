@@ -1,5 +1,5 @@
 body {
-    background-color: #cef7cd;
+    background-color: #e0f4df;
 }
 
 img {
@@ -7,12 +7,22 @@ img {
     height: 100%;
 }
 
+h3 {
+    text-align: center;
+}
+
 figcaption {
     background-color: #ffffff;
     margin-top: -6px;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
     padding-bottom: 25px;
+}
+
+section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
 }
