@@ -6,8 +6,8 @@
     width: 100%;
     margin: 0;
     height: 100vh;
-    background-image:
-        background-size: cover;
+    background-image: url(http://victorhegelund.dk/beer-2435382_1280.jpg);
+    background-size: cover;
     background-position: 50% 50%;
     max-width: none;
 }
