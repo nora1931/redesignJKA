@@ -1,0 +1,24 @@
+* {
+
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+figure {
+    background: #fff;
+}
+
+figure img {}
+
+/*div {
+    width:400px;
+    padding:20px;
+    border:1px;
+}*/
