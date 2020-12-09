@@ -16,3 +16,9 @@ figure {
 }
 
 figure img {}
+
+h3,
+p,
+figcaption {
+    text-align: center;
+}
