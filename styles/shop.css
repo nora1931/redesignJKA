@@ -8,7 +8,7 @@ img {
 }
 
 body {
-    background-color: darkseagreen;
+    background-color: #dce0cc;
 }
 
 figure {
@@ -16,9 +16,3 @@ figure {
 }
 
 figure img {}
-
-/*div {
-    width:400px;
-    padding:20px;
-    border:1px;
-}*/
