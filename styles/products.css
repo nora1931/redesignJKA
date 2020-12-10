@@ -1,5 +1,7 @@
 body {
     background-color: #f0eae2;
+    margin-right: 10px;
+    margin-left: 115px;
 }
 
 h3 {
@@ -12,20 +14,105 @@ img {
     height: 100%;
 }
 
-section {
+.produkt_container {
     margin-top: 10px;
     margin-bottom: 40px;
 
 }
 
-figcaption {
+.produkt_1 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+    width: 75%;
+    padding-bottom: 245px;
+}
+
+.produkt_1 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+.produkt_2 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+    width: 75%;
+    padding-bottom: 245px;
+
+}
+
+.produkt_2 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+.produkt_3 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+    width: 75%;
+    padding-bottom: 245px;
+
+}
+
+.produkt_3 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+.produkt_4 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 65%;
+    width: 75%;
+    margin-top: 300px;
+}
+
+.produkt_4 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+.produkt_5 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 65%;
+    width: 75%;
+    margin-top: 300px;
+}
+
+.produkt_5 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+.produkt_6 .img {
+    background-image: url(../img/produkt_billede.png);
+    background-size: cover;
+    background-position: center;
+    height: 65%;
+    width: 75%;
+    margin-top: 300px;
+
+
+}
+
+.produkt_6 .img:hover {
+    background-image: url(../img/hover%20produkt%20.jpg);
+}
+
+
+
+.tekst {
     background-color: #ffffff;
     margin-top: -6px;
+    margin-right: 98px;
     text-align: center;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
 }
 
 @media (min-width:550px) {
@@ -34,7 +121,7 @@ figcaption {
         grid-template-columns: 1fr 1fr;
     }
 
-    figcaption {
+    .tekst {
         background-color: #ffffff;
         margin-top: -6px;
         text-align: center;
@@ -45,13 +132,14 @@ figcaption {
     }
 }
 
+
 @media (min-width:1000px) {
     .produkt_container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    figcaption {
+    .tekst {
         background-color: #ffffff;
         margin-top: -6px;
         text-align: center;
@@ -60,4 +148,5 @@ figcaption {
         padding-top: 10px;
         padding-bottom: 25px;
     }
+
 }
