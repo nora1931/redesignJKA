@@ -1,0 +1,24 @@
+* {
+
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #dce0cc;
+}
+
+figure {
+    background: #fff;
+}
+
+figure img {}
+
+h3,
+p,
+figcaption {
+    text-align: center;
+}
