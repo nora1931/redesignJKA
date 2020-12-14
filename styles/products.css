@@ -20,13 +20,25 @@ img {
 
 }
 
-.produkt_1 .img {
-    background-image: url(../img/produkt_billede.png);
+.img_div {
+    height: 60vh;
+    width: 100%;
+}
+
+.produkt {
+    display: block;
+
+}
+
+.produkt .img {
     background-size: cover;
     background-position: center;
-    height: 55%;
-    width: 75%;
     padding-bottom: 245px;
+    height: 100%;
+}
+
+.produkt_1 .img {
+    background-image: url(../img/produkt_billede.png);
 }
 
 .produkt_1 .img:hover {
@@ -35,11 +47,7 @@ img {
 
 .produkt_2 .img {
     background-image: url(../img/produkt_billede.png);
-    background-size: cover;
-    background-position: center;
-    height: 55%;
-    width: 75%;
-    padding-bottom: 245px;
+
 
 }
 
@@ -49,11 +57,7 @@ img {
 
 .produkt_3 .img {
     background-image: url(../img/produkt_billede.png);
-    background-size: cover;
-    background-position: center;
-    height: 55%;
-    width: 75%;
-    padding-bottom: 245px;
+
 
 }
 
@@ -63,11 +67,7 @@ img {
 
 .produkt_4 .img {
     background-image: url(../img/produkt_billede.png);
-    background-size: cover;
-    background-position: center;
-    height: 65%;
-    width: 75%;
-    margin-top: 300px;
+
 }
 
 .produkt_4 .img:hover {
@@ -76,11 +76,7 @@ img {
 
 .produkt_5 .img {
     background-image: url(../img/produkt_billede.png);
-    background-size: cover;
-    background-position: center;
-    height: 65%;
-    width: 75%;
-    margin-top: 300px;
+
 }
 
 .produkt_5 .img:hover {
@@ -89,11 +85,7 @@ img {
 
 .produkt_6 .img {
     background-image: url(../img/produkt_billede.png);
-    background-size: cover;
-    background-position: center;
-    height: 65%;
-    width: 75%;
-    margin-top: 300px;
+
 
 
 }
