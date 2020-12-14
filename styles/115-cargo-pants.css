@@ -63,3 +63,15 @@ select {
     grid-column: 1/3;
     grid-row: 2/3;
 }
+
+@media (min-width:650px) {
+    .product-image-conatiner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .content_container {
+        margin: 50px 150px;
+    }
