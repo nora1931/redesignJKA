@@ -1,144 +1,147 @@
 body {
     background-color: #f0eae2;
-    margin-right: 10px;
-    margin-left: 115px;
+    margin: 0;
 }
 
-h3 {
-    text-align: left;
-    margin-left: 40px;
-}
-
-img {
-    width: 100%;
-    height: 100%;
+main {
+    margin: 0 20px;
 }
 
 .produkt_container {
-    margin-top: 10px;
-    margin-bottom: 40px;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
-.img_div {
-    height: 60vh;
+.product {
+    text-decoration: none;
+    color: #000000;
+}
+
+.product_img_container {
+    height: 70vh;
+    min-height: 300px;
     width: 100%;
 }
 
-.produkt {
-    display: block;
-
-}
-
-.produkt .img {
+.product_img {
+    background-image: url(../img/115_cargopants.png);
     background-size: cover;
     background-position: center;
-    padding-bottom: 245px;
     height: 100%;
+    width: 100%;
 }
 
-.produkt_1 .img {
-    background-image: url(../img/produkt_billede.png);
+.product_img:hover {
+    background-image: url(../img/3billeder_billede2.jpg)
 }
 
-.produkt_1 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-.produkt_2 .img {
-    background-image: url(../img/produkt_billede.png);
-
-
-}
-
-.produkt_2 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-.produkt_3 .img {
-    background-image: url(../img/produkt_billede.png);
-
-
-}
-
-.produkt_3 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-.produkt_4 .img {
-    background-image: url(../img/produkt_billede.png);
-
-}
-
-.produkt_4 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-.produkt_5 .img {
-    background-image: url(../img/produkt_billede.png);
-
-}
-
-.produkt_5 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-.produkt_6 .img {
-    background-image: url(../img/produkt_billede.png);
-
-
-
-}
-
-.produkt_6 .img:hover {
-    background-image: url(../img/hover%20produkt%20.jpg);
-}
-
-
-
-.tekst {
-    background-color: #ffffff;
-    margin-top: -6px;
-    margin-right: 98px;
+.product_description {
+    background-color: #fff;
+    padding: 16px 8px;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 0px;
+}
+
+.product_brand {
+    font-size: 12px;
 }
 
 @media (min-width:550px) {
     .produkt_container {
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .tekst {
-        background-color: #ffffff;
-        margin-top: -6px;
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 25px;
+    main {
+        margin: 0 40px;
     }
 }
 
-
 @media (min-width:1000px) {
     .produkt_container {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .tekst {
-        background-color: #ffffff;
-        margin-top: -6px;
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
-        padding-bottom: 25px;
+    main {
+        margin: 0 80px;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 40px;
+    background-color: darkslategrey;
+    color: #fff;
+    padding: 20px 20px 0px 20px;
+}
+
+.footer_row_one {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer dl {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration-style: dashed;
+}
+
+footer a:hover {
+    color: beige;
+    ;
+    text-decoration-style: solid;
+}
+
+footer .newsletter_row_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+footer input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer_row_two {
+    text-align: center;
+}
+
+.footer_row_two img {
+    height: 15px;
+    margin: 0 10px;
+}
+
+.footer_row_three p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+@media (min-width:550px) {
+
+    footer {
+        margin-top: 40px;
+        padding: 20px 80px 0px 80px;
     }
 
+    footer .footer_row_one {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer_row_two img {
+        height: 20px;
+    }
 }
