@@ -1,23 +1,28 @@
 .videobackground_container {
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background-image: url(../img/lookbook_billede.jpeg);
-    background-size: cover;
-    background-position: 50% 50%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    min-width: 200%;
+    min-height: 200%;
+
 }
 
-.content_container {
-    padding: 10px 40px;
-    background-color: rgba(220, 224, 204, 0.65);
+.videobackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+
 }
 
-.content_container_ned {
-    margin-bottom: 0;
-}
-
-.overskrift h1 {
-    margin-top: 0;
+.all_container {
+    position: absolute;
+    padding-right: 20px;
 }
 
 .section_content {
@@ -26,14 +31,29 @@
     column-gap: 50px;
 }
 
+.content_container {
+    padding: 10px 40px;
+    background-color: rgba(220, 224, 204, 0.65);
+}
+
+.overskrift h1 {
+    margin-top: 0;
+}
+
 @media (min-width:650px) {
     .section_content {
         grid-template-columns: 1fr 1fr;
     }
+
+    .all_container {
+        padding-right: 40px;
+    }
 }
 
 @media (min-width:1000px) {
-    .content_container {}
 
+    .all_container {
+        padding-right: 80px;
+    }
 
 }
