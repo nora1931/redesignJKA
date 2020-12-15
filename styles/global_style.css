@@ -1,6 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+body {
+    background-color: #f0eae2;
+    margin: 0;
+}
+
+main {
+    margin: 0 20px;
+}
+
+@media (min-width:550px) {
+    main {
+        margin: 0 40px;
+    }
+}
+
+@media (min-width:1000px) {
+    main {
+        margin: 0 80px;
+    }
+}
+
 h1 {
     font-family: 'Russo One', sans-serif;
     text-align: center;
@@ -13,4 +34,117 @@ h3 {
 
 p {
     font-family: 'Questrial', sans-serif
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 40px;
+    background-color: darkslategrey;
+    color: #fff;
+    padding: 20px 20px 0px 20px;
+}
+
+.footer_row_one {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer dl {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration-style: dashed;
+}
+
+footer a:hover {
+    color: beige;
+    ;
+    text-decoration-style: solid;
+}
+
+footer .newsletter_row_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+footer input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer_row_two {
+    text-align: center;
+}
+
+.footer_row_two img {
+    height: 15px;
+    margin: 0 10px;
+}
+
+.footer_row_three p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+@media (min-width:550px) {
+
+    footer {
+        margin-top: 40px;
+        padding: 20px 80px 0px 80px;
+    }
+
+    footer .footer_row_one {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer_row_two img {
+        height: 20px;
+    }
+}
+
+/*--HEADER--*/
+header .hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+header #menuknap {
+    display: inline-block;
+}
+
+header #menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+@media only screen and (min-width: 550px) {
+
+    header #menuknap {
+        display: none;
+    }
+
+    header #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    header #menu li {
+        display: inline-block;
+    }
 }
