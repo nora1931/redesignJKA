@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f0eae2;
     margin: 0;
@@ -29,12 +33,23 @@ h1 {
 
 h3 {
     font-family: 'Russo One', sans-serif;
-
 }
 
 p {
     font-family: 'Questrial', sans-serif;
     line-height: 1.5;
+}
+
+a {
+    color: #4B5D4E;
+    text-decoration-style: dashed;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+a:hover {
+    color: #DCE0CC;
+    text-decoration-style: solid;
 }
 
 /*FOOTER*/
@@ -57,14 +72,9 @@ footer dl {
 
 footer a {
     color: #fff;
-    text-decoration-style: dashed;
 }
 
-footer a:hover {
-    color: beige;
-    ;
-    text-decoration-style: solid;
-}
+footer a:hover {}
 
 footer .newsletter_row_one {
     display: grid;
