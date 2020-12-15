@@ -33,17 +33,18 @@ h4,
 h5,
 h6 {
     font-family: 'Russo One', sans-serif;
-    margin-bottom: 5px;
 }
 
 h1 {
     text-align: center;
-    color: darkslategrey
+    color: darkslategrey;
+
 }
 
 p {
     font-family: 'Questrial', sans-serif;
     line-height: 1.5;
+    margin-top: -8px;
 }
 
 a {
