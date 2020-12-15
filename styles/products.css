@@ -7,7 +7,11 @@
 
 .product {
     text-decoration: none;
-    color: #000000;
+    color: #000;
+}
+
+.product:hover {
+    color: darkslategrey;
 }
 
 .product_img_container {
