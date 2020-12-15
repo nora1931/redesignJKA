@@ -10,7 +10,7 @@ main {
     margin: 0 20px;
 }
 
-@media (min-width:550px) {
+@media (min-width:650px) {
     main {
         margin: 0 40px;
     }
@@ -33,7 +33,8 @@ h3 {
 }
 
 p {
-    font-family: 'Questrial', sans-serif
+    font-family: 'Questrial', sans-serif;
+    line-height: 1.5;
 }
 
 /*FOOTER*/
@@ -99,7 +100,7 @@ footer input {
     margin-bottom: 0;
 }
 
-@media (min-width:550px) {
+@media (min-width:650px) {
 
     footer {
         margin-top: 40px;
@@ -133,7 +134,7 @@ header #menu {
     transform-origin: top left;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
 
     header #menuknap {
         display: none;
