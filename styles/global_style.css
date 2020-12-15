@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f0eae2;
     margin: 0;
@@ -22,19 +26,36 @@ main {
     }
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Russo One', sans-serif;
-    text-align: center;
 }
 
-h3 {
-    font-family: 'Russo One', sans-serif;
+h1 {
+    text-align: center;
+    color: darkslategrey;
 
 }
 
 p {
     font-family: 'Questrial', sans-serif;
     line-height: 1.5;
+    margin-top: -8px;
+}
+
+a {
+    color: #4B5D4E;
+    text-decoration-style: dashed;
+    font-family: 'Questrial', sans-serif;
+}
+
+a:hover {
+    color: #DCE0CC;
+    text-decoration-style: solid;
 }
 
 /*FOOTER*/
@@ -57,14 +78,9 @@ footer dl {
 
 footer a {
     color: #fff;
-    text-decoration-style: dashed;
 }
 
-footer a:hover {
-    color: beige;
-    ;
-    text-decoration-style: solid;
-}
+footer a:hover {}
 
 footer .newsletter_row_one {
     display: grid;
@@ -118,8 +134,8 @@ footer input {
 
 /*--HEADER--*/
 header .hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
+    display: none;
+    transform: scale(0);
     transform: translateX(-100%);
     opacity: 0;
 }
@@ -134,18 +150,18 @@ header #menu {
     transform-origin: top left;
 }
 
-@media only screen and (min-width: 650px) {
+nav {
+    height: 100px;
+}
 
-    header #menuknap {
-        display: none;
-    }
 
-    header #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
-    }
 
-    header #menu li {
-        display: inline-block;
-    }
+.nav_logo {
+    background-image: url(../img/jka_logo.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
