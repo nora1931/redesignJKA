@@ -1,18 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
-body {
-    background-color: #e0f4df;
-}
-
-img {
+.lookbok_container img {
     width: 100%;
     height: 100%;
 }
 
 h3 {
     text-align: center;
-    font-family: 'Russo One', sans-serif;
-
 }
 
 figcaption {
@@ -32,10 +24,6 @@ section {
 }
 
 @media (min-width:750px) {
-
-    img {
-        width: 100%;
-    }
 
     section {
         margin-top: -150px;

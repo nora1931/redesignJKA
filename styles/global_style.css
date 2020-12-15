@@ -72,6 +72,10 @@ footer {
     grid-template-columns: 1fr;
 }
 
+.footer_row_one h3 {
+    text-align: left;
+}
+
 footer dl {
     margin: 0;
 }
