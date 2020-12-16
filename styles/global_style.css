@@ -76,7 +76,7 @@ footer {
 
 footer .footer_photo_container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .footer_photo {
@@ -171,6 +171,10 @@ footer input {
 }
 
 @media (min-width:650px) {
+
+    footer .footer_photo_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     footer .footer_content_container {
         padding: 20px 80px 0px 80px;
