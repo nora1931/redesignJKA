@@ -1,1 +1,165 @@
+header #menuknap {
+    color: #516A5C;
+    z-index: 2;
+}
 
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+.image_container {
+    height: 100vh;
+    flex-grow: 1;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    min-width: 100px;
+}
+
+.image_sprite {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo_container {
+    max-height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.logo {
+    margin: auto;
+    width: 300px;
+    max-width: 80vw;
+}
+
+.image_sprite0 {
+    background-image: url(../index_img/0.jpg);
+}
+
+.image_sprite1 {
+    background-image: url(../index_img/1.jpg);
+}
+
+.image_sprite2 {
+    background-image: url(../index_img/2.jpg);
+}
+
+.image_sprite3 {
+    background-image: url(../index_img/3.jpg);
+}
+
+.image_sprite4 {
+    background-image: url(../index_img/4.jpg);
+}
+
+.image_sprite5 {
+    background-image: url(../index_img/5.jpg);
+}
+
+.image_sprite6 {
+    background-image: url(../index_img/6.jpg);
+}
+
+.image_sprite7 {
+    background-image: url(../index_img/7.jpg);
+}
+
+.image_sprite8 {
+    background-image: url(../index_img/8.jpg);
+}
+
+.image_sprite9 {
+    background-image: url(../index_img/9.jpg);
+}
+
+.image_sprite10 {
+    background-image: url(../index_img/10.jpg);
+}
+
+.image_sprite11 {
+    background-image: url(../index_img/11.jpg);
+}
+
+.image_sprite12 {
+    background-image: url(../index_img/12.jpg);
+}
+
+.image_sprite13 {
+    background-image: url(../index_img/13.jpg);
+}
+
+.image_sprite14 {
+    background-image: url(../index_img/14.jpg);
+}
+
+.image_sprite15 {
+    background-image: url(../index_img/15.jpg);
+}
+
+.image_sprite16 {
+    background-image: url(../index_img/16.jpg);
+}
+
+.image_sprite17 {
+    background-image: url(../index_img/17.jpg);
+}
+
+.image_sprite18 {
+    background-image: url(../index_img/18.jpg);
+}
+
+.image_sprite19 {
+    background-image: url(../index_img/19.jpg);
+}
+
+.image_sprite20 {
+    background-image: url(../index_img/20.jpg);
+}
+
+.image_sprite21 {
+    background-image: url(../index_img/21.jpg);
+}
+
+.image_sprite22 {
+    background-image: url(../index_img/22.jpg);
+}
+
+.image_sprite23 {
+    background-image: url(../index_img/23.jpg);
+}
+
+.image_sprite24 {
+    background-image: url(../index_img/24.jpg);
+}
+
+.image_sprite25 {
+    background-image: url(../index_img/25.jpg);
+}
+
+.image_sprite26 {
+    background-image: url(../index_img/26.jpg);
+}
+
+.image_sprite27 {
+    background-image: url(../index_img/27.jpg);
+}
+
+.image_sprite28 {
+    background-image: url(../index_img/28.jpg);
+}
+
+.image_sprite29 {
+    background-image: url(../index_img/29.jpg);
+}
+
+.image_sprite30 {
+    background-image: url(../index_img/30.jpg);
+}
