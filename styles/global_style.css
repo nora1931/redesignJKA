@@ -120,14 +120,12 @@ footer .footer_content_container {
 .footer_row_one {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.footer_row_one h3 {
-    text-align: left;
+    text-align: center;
 }
 
 footer dl {
     margin: 0;
+    line-height: 1.5;
 }
 
 footer a {
@@ -182,6 +180,10 @@ footer input {
 
     footer .footer_row_one {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .footer_row_one {
+        text-align: left;
     }
 
     .footer_row_two img {
