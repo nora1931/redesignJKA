@@ -1,0 +1,4 @@
+AuthType Basic 
+AuthName "Password Protected website" 
+AuthUserFile https://elastic-davinci-d19592.netlify.app/.htpasswd 
+require valid-user
