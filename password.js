@@ -4,10 +4,10 @@
 
     var pass1 = "kea";
 
-    password = prompt('Please enter your password to view this page!', ' ');
+    password = prompt('Indtast adgangskoden for at se siden', ' ');
 
     if (password == pass1)
-        alert('Password Correct! Click OK to enter!');
+        alert('Adgangskoden er! Klik på OK for at komme ind!');
     else {
         window.location = "http://google.com/";
     }
