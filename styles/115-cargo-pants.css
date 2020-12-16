@@ -1,9 +1,13 @@
+.product_name {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
 .product_content_container {
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 80px;
+    column-gap: 40px;
     margin-bottom: 20px;
-
 }
 
 .product_image_container {
@@ -16,7 +20,6 @@
     height: 100%;
     background-position: center;
     background-size: cover;
-
 }
 
 .product_price {
@@ -62,10 +65,10 @@ select {
     margin-bottom: 10px;
     font-size: 16px;
     appearance: none;
-
 }
 
 @media (min-width:650px) {
+
     .product_content_container {
         grid-template-columns: 1fr 1fr;
     }
@@ -92,5 +95,10 @@ select {
         grid-column: 3/3;
         grid-row: 1/3;
     }
+}
 
+@media (min-width:1000px) {
+    .product_content_container {
+        column-gap: 80px;
+    }
 }
