@@ -1,41 +1,38 @@
-.lookbok_container img {
-    width: 100%;
-    height: 100%;
-}
-
 h3 {
     text-align: center;
+}
+
+.lookbok_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    grid-row-gap: 20px;
+}
+
+.lookbok_container img {
+    width: 100%;
+    object-fit: cover;
 }
 
 figcaption {
     background-color: #ffffff;
     margin-top: -6px;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+    padding: 10px 20px;
 }
 
-section {
-    margin-top: 70px;
-    margin-bottom: 70px;
-
+.lookbok_photo {
+    height: 100%;
 }
 
-@media (min-width:750px) {
+figure {
+    justify-content: center;
+}
 
-    section {
-        margin-top: -150px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+@media (min-width:650px) {
 
     .lookbok_container {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-
-
+        grid-row-gap: 40px;
     }
-
 }

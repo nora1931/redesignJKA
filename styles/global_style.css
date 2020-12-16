@@ -11,18 +11,22 @@ body {
 }
 
 main {
-    margin: 0 20px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 @media (min-width:650px) {
     main {
-        margin: 0 40px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
 @media (min-width:1000px) {
     main {
-        margin: 0 80px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
 
@@ -37,7 +41,7 @@ h6 {
 
 h1 {
     text-align: center;
-    color: darkslategrey;
+    color: #597465;
     font-size: 2.5em;
     text-transform: uppercase;
 }
@@ -59,11 +63,14 @@ a:hover {
     text-decoration-style: solid;
 }
 
+figure {
+    margin: 0;}
+
 /*FOOTER*/
 
 footer {
     margin-top: 40px;
-    background-color: darkslategrey;
+    background-color: #597465;
     color: #fff;
     padding: 20px 20px 0px 20px;
 }
@@ -138,6 +145,12 @@ footer input {
 }
 
 /*--HEADER--*/
+
+header {
+    position: absolute;
+    z-index: 2;
+}
+
 header .hidden {
     display: none;
     transform: scale(0);
@@ -145,37 +158,87 @@ header .hidden {
     opacity: 0;
 }
 
-header #menuknap {
-    display: inline-block;
-}
-
 header #menu {
     list-style-type: none;
-    transition: transform .3s;
-    transform-origin: top left;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 2em;
+    line-height: 2;
+    background-color: #DCE0CC;
 }
 
-nav {
-    height: 80px;
-    background-color: aqua;
+header #menu a:hover {
+    color: #F0F0F0;
 }
 
+header .row {
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+}
 
+header .nav_menu {
+    justify-content: left;
+    display: flex;
+}
 
+header #menuknap {
+    font-size: 3em;
+    margin: auto 0 auto 12px;
+    max-height: 70px;
+    text-align: left;
+    color: #DCE0CC;
+    cursor: pointer;
+}
 
-
-
-
-/*
 .nav_logo {
-    height: 100%;
-    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav_logo img {
-    height: 100%;
+    height: 30px;
 }
-*/
+
+.nav_basket {
+    justify-content: right;
+    display: flex;
+    margin: auto 20px auto 0;
+}
+
+.nav_basket img {
+    height: 35px;
+}
+
+@media (min-width:650px) {
+    header #menuknap {
+        margin: auto 0 auto 32px;
+    }
+
+    .nav_basket {
+        margin: auto 40px auto 0;
+    }
+}
+
+@media (min-width:1000px) {
+    header #menuknap {
+        margin: auto 0 auto 72px;
+    }
+
+    .nav_basket {
+        margin: auto 80px auto 0;
+    }
+}
