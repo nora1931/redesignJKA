@@ -61,21 +61,6 @@
     grid-row: 2/3;
 }
 
-input,
-select {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 5px;
-    height: 40px;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 16px;
-    appearance: none;
-    cursor: pointer;
-}
-
 @media (min-width:650px) {
 
     .product_name {
