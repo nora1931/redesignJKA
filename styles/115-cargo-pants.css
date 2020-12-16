@@ -1,5 +1,4 @@
 .product_name {
-    margin-top: 0;
     margin-bottom: 5px;
 }
 
@@ -24,6 +23,15 @@
 
 .product_price {
     text-align: center;
+}
+
+.buy_now {
+    background-color: #516A5C;
+    color: #fff;
+}
+
+.add_to_cart {
+    background-color: #DCE0CC;
 }
 
 .image_galleri_container img {
@@ -65,9 +73,14 @@ select {
     margin-bottom: 10px;
     font-size: 16px;
     appearance: none;
+    cursor: pointer;
 }
 
 @media (min-width:650px) {
+
+    .product_name {
+        margin-top: 0;
+    }
 
     .product_content_container {
         grid-template-columns: 1fr 1fr;
