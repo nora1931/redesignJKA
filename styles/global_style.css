@@ -80,10 +80,8 @@ select {
     appearance: none;
     -webkit-appearance: none;
     text-align: center;
-    text-align: -webkit-center;
     text-align-last: center;
     background-color: #fff;
-
 }
 
 input[type=submit],
