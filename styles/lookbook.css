@@ -1,7 +1,3 @@
-h3 {
-    text-align: center;
-}
-
 .lookbok_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -12,6 +8,10 @@ h3 {
 .lookbok_container img {
     width: 100%;
     object-fit: cover;
+}
+
+lookbok_container h3 {
+    text-align: center;
 }
 
 figcaption {
