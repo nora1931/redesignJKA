@@ -1,15 +1,20 @@
+//Her er 2 const (konstanter). De bruges til at overskueliggøre den øvige kode.
 const imgCarousel = document.querySelector(".carousel");
 const carouselScrollWidth = imgCarousel.scrollWidth;
 
+//Lyt efter om hjemmesiden er loadet og om musen bevæger sig.
 window.addEventListener('load', fotoCarousel);
 window.addEventListener("mousemove", mousePos)
 
+//Hastigheden karrusellen køre med. Jo højre tal jo hurdigere. Kan også være negativt tal, så kører karrusellen baglæns.
 let hastighed = 1
+// Antal ms (millisekunder) karrusellen skal stå stille før den restarter
 let scrollStop = 100
 
-//Start karrusel
+//Start karrusel (uanset om musen har bevæget sig)
 function fotoCarousel() {
     console.log("fotoCarousel")
+    //setInterval er lige som setTimeout. setInterval genstrter bare automatisk.
     self.setInterval(() => {
         if (imgCarousel.scrollLeft !== carouselScrollWidth) {
             imgCarousel.scrollTo(imgCarousel.scrollLeft + hastighed, 0);
@@ -18,6 +23,7 @@ function fotoCarousel() {
     }, 1);
 };
 
+//Genstart karrusellen normal vej (positive tal)
 function restart() {
     let timer = null;
     imgCarousel.addEventListener('scroll', function () {
@@ -31,6 +37,7 @@ function restart() {
     }, false);
 }
 
+//Genstart karrusellen baglæns (negative tal)
 function restartBack() {
     let timer = null;
     imgCarousel.addEventListener('scroll', function () {
@@ -44,14 +51,20 @@ function restartBack() {
     }, false);
 }
 
+//Ændre hastigheden efter musens position
 function mousePos(pos) {
+    //Beregn hvor mange px en procent af skærmens bredde er
     let enProcentAfScreen = window.innerWidth / 100 * 1;
+
+    //Dividere musens position på x-aksen med 1% af skærmens bredde. Dette gøres for at finde ud af, hvor langt til højre eller venstre på smærmen musen er. Helt til venstre er 0% og helt til højre er 100%
     let procentFraMus = pos.x / enProcentAfScreen
-    //    console.log(procentFraMus);
+
+    //Justere hastigheden efter den procentsats musen er fra venstre
+    //DER STÅR: hvis  musens procentsats er større end 95% (så altså fra 95% til 100%) så skal hastigheden være 10
     if (procentFraMus > 95) {
         hastighed = 10
         restart()
-
+        //DER STÅR: ellers hvis  musens procentsats er større end 90% (så altså fra 90% til 95%) så skal hastigheden være 9
     } else if (procentFraMus > 90) {
         hastighed = 9
         restart()
@@ -88,6 +101,9 @@ function mousePos(pos) {
         hastighed = 1
         restart()
 
+        //DER STÅR: ellers hvis  musens procentsats er større end 45% (så altså fra 45% til 50%) så skal hastigheden være -1
+        //Det skal den fordi, musens procentsats er under 50% og derfor er musen på vensre side af midten.
+        //-1 betyder at den kører baglæns. Jo lavere det nekative tal er jo hurdigere kører karrusellen baglæns.
     } else if (procentFraMus > 45) {
         hastighed = -1
         restartBack()
